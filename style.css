@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Source+Serif+Pro:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #171a26;
+  font-family: "Roboto", sans-serif;
+}
+
+/*Header Section*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  max-height: 100px;
+  min-height: 80px;
+  padding: 0% 10px;
+  color: azure;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  position: relative;
+  z-index: 2;
+  transition: 1s ease-in-out;
+}
+
+.sticky-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.53);
+  transition: 0.5s ease-in-out;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  font-weight: 700;
+}
+
+.menu ul li:hover {
+  color: grey;
+  background-color: azure;
+  transition: 0.3s ease-in-out;
+}
+
+.menu ul li {
+  /* text-decoration: none; */
+  list-style: none;
+  /* font-size: 22px; */
+  /* color: azure; */
+  padding: 20px;
+  cursor: pointer;
+}
+.menu ul a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.location span {
+  display: flex;
+  gap: 5px;
+}
+
+.getApp {
+  text-decoration: none;
+  color: azure;
+  border: 3px solid azure;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.getApp:hover {
+  background-color: rgba(240, 255, 255, 0.412);
+}
+
+/*Slider Section*/
+
+.swiper {
+  height: 100vh;
+  width: 100%;
+  margin-top: -100px;
+}
+
+.swiper-slide {
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+/* .location a:visited,.getApp{
+    color: azure;
+} */
+
+.swiper-slide p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 80px;
+  color: azure;
+  transform: translate(-50%, -50%);
+  font-weight: 900;
+}
+
+.btn {
+  /* margin: auto; */
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  border: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: azure;
+  cursor: pointer;
+  font-size: 22px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.867);
+}
+
+.btn:hover {
+  /* color: coral; */
+  background-color: aliceblue;
+  /* width: 50px; */
+  padding: 16px 21px;
+}
+
+/*Pricing section*/
+
+.pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 200px;
+  position: relative;
+}
+.pricing h2 {
+  position: absolute;
+}
+
+.packages {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid black; */
+  box-shadow: 1px 2px 20px 3px grey;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  /* gap: 15px; */
+  color: azure;
+  background-color: #31313143;
+  width: 25vw;
+  height: 400px;
+}
+
+.packages ul li {
+  list-style: none;
+  text-align: center;
+  font-size: 25px;
+  text-decoration: underline;
+  margin: 15px 0px;
+}
+
+.packages h1 {
+  font-size: 35px;
+  color: white;
+}
+
+.packages p {
+  font-size: 40px;
+  font-weight: 150;
+}
+
+.packages button {
+  border: none;
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.packages button:hover {
+  background-color: rgb(8, 98, 98);
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+.packages:hover {
+  background-color: rgb(137, 170, 170);
+  transition: 0.8s ease-in-out;
+}
+
+/*Features*/
+.features {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 200px;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  position: relative;
+}
+.features h2,
+.pricing h2 {
+  font-size: 45px;
+  color: azure;
+  position: absolute;
+  top: 0;
+  margin-top: -100px;
+}
+.feature {
+  width: 20vw;
+  height: 300px;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  color: white;
+  -webkit-box-shadow: 0px 0px 11px -3px rgba(255, 252, 255, 1);
+  -moz-box-shadow: 0px 0px 11px -3px rgba(255, 252, 255, 1);
+  box-shadow: 0px 0px 11px -3px rgba(255, 252, 255, 1);
+  position: relative;
+  border-radius: 10px;
+}
+.feature h3 {
+  font-size: 45px;
+  position: relative;
+  z-index: 2;
+}
+
+.feature p {
+  position: relative;
+  z-index: 2;
+}
+.feature button {
+  visibility: hidden;
+  border: none;
+  font-size: 14px;
+  padding: 5px 15px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 10px;
+}
+
+.feature .overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.feature .overlay:hover {
+  background-color: rgba(0, 0, 0, 0.371);
+  transition: 0.5s ease-in-out;
+}
+
+.yoga {
+  background-image: url("image/yoga.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.sandc {
+  background-image: url("image/sandc.jpg");
+  background-size: cover;
+  background-position: bottom center;
+}
+.workout {
+  background-image: url("image/workout.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.dancing {
+  background-image: url("image/dancing.jpg");
+  background-size: cover;
+  background-position: bottom center;
+}
+.boxing {
+  background-image: url("image/boxing.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.meditation {
+  background-image: url("image/meditation.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.cardio {
+  background-image: url("image/cardio.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.pilates {
+  background-image: url("image/pilates.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+/*About Section*/
+
+.about {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./image/About.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  /* margin-top: 100px; */
+  color: azure;
+}
+
+.icons {
+  display: flex;
+  margin-top: 80px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 130px;
+  color: azure;
+  height: 200px;
+}
+
+.icons .icon-height {
+  height: 80px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  width: 8vw;
+  justify-content: flex-start;
+}
+
+.details h4 {
+  font-size: 15px;
+}
+
+/*Footer*/
+footer {
+  min-height: 200px;
+}
