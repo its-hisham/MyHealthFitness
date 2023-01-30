@@ -381,9 +381,7 @@ body {
   font-size: 15px;
 }
 
-.about .icons::after:hover{
-  background-color: brown;
-}
+
 /* Trainers */
 
 .trainers {
