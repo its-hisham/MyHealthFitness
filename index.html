@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
-    <title>My health Fitness</title>
+    <title>My Health Fitness</title>
 </head>
 
 <body>
@@ -19,22 +19,30 @@
         <!--Header Start-->
         <header class="header">
             <div class="logo">
-                <!-- <img src="image/logo.webp" /> -->
-                <h1>MyHeathFitness</h1>
+                <img src="image/logo.webp" />
+                
             </div>
             <nav class="menu">
                 <ul>
-                    <a href="#">
+                    <a href="##home">
                         <li>Home</li>
                     </a>
-                    <li>About</li>
-                    <li>Features</li>
-                    <li>Trainers</li>
-                    <li>Pricing</li>
+                    <a href="##about">
+                        <li>About</li>
+                    </a>
+                    <a href="##features">
+                        <li>Features</li>
+                    </a>
+                    <a href="#trainers">
+                        <li>Trainers</li>
+                    </a>
+                    <a href="##pricing">
+                        <li>Pricing</li>
+                    </a>
                 </ul>
             </nav>
             <div class="location">
-                <span>Ahmedabad<i class="fa-solid fa-location-dot"></i></span>
+                <span>NEW DELHI<i class="fa-solid fa-location-dot"></i></span>
                 <a href="#" class="getApp">Get App</a>
                 <i class="fa-regular fa-user"></i>
             </div>
@@ -42,11 +50,11 @@
         <!--Header End-->
         <!--home section-->
         <section class="swiper">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper" id="#home">
                 <!-- Slides -->
-                <div class="swiper-slide"><img src="image/image2.jpg" alt="">
-                    <p>We are Fitness Club </p>
-                    <button class="btn">Explore Fitness</button>
+                <div class="swiper-slide"><img src="./image/sportswoman-training-abs-with-ball-gym.jpg" alt="">
+                    <p>LIVE LIFE HEALTHY </p>
+                    <button class="btn">Explore More</button>
                 </div>
 
                 <div class="swiper-slide"><img src="image/image1.jpg" alt="">
@@ -55,7 +63,7 @@
                 </div>
 
                 <div class="swiper-slide"><img src="image/image3.jpg" alt="">
-                    <p>We are Fitness Club </p>
+                    <p>Welcome fit life </p>
                     <button class="btn">Explore Fitness</button>
                 </div>
 
@@ -71,14 +79,22 @@
             <div class="swiper-scrollbar"></div>
         </section>
         <!-- About section  -->
-        <section>
+        <section id="#about">
             <div class="about">
-                <h1>About GYM</h1>
+                <h1>About Us</h1>
             </div>
             <div class="icons">
                 <div class="details">
+                    <i class="fa-solid fa-people-group icon-height"></i>
+                    <h4>Corporate wellness program</h4>
+                </div>
+                <div class="details">
                     <i class="fa-regular fa-building icon-height"></i>
                     <h4>150 GYMS</h4>
+                </div>
+                <div class="details">
+                    <i class="fa-solid fa-users-rectangle icon-height"></i>
+                    <h4>Group Program</h4>
                 </div>
 
                 <div class="details">
@@ -95,21 +111,24 @@
                     <i class="fa-solid fa-dumbbell icon-height"></i>
                     <h4>Personal training program</h4>
                 </div>
-
-                <div class="details">
-                    <i class="fa-solid fa-people-group icon-height"></i>
-                    <h4>Corporate wellness program</h4>
-                </div>
-
-                <div class="details">
-                    <i class="fa-solid fa-users-rectangle icon-height"></i>
-                    <h4>Group Program</h4>
-                </div>
             </div>
         </section>
         <!--Features-->
-        <section class="features">
+
+        <section class="features" id="#features">
             <h2>Features</h2>
+            <div class="feature dancing">
+                <div class="overlay"></div>
+                <h3>Dancing</h3>
+                <p>Flexibility.Wellbeing</p>
+                <button>Explore</button>
+            </div>
+            <div class="feature pilates">
+                <div class="overlay"></div>
+                <h3>Pilates</h3>
+                <p>Flexibility.Wellbeing</p>
+                <button>Explore</button>
+            </div>
             <div class="feature yoga">
                 <div class="overlay"></div>
                 <h3>Yoga</h3>
@@ -128,12 +147,7 @@
                 <p>Flexibility.Wellbeing</p>
                 <button>Explore</button>
             </div>
-            <div class="feature dancing">
-                <div class="overlay"></div>
-                <h3>Dancing</h3>
-                <p>Flexibility.Wellbeing</p>
-                <button>Explore</button>
-            </div>
+
             <div class="feature boxing">
                 <div class="overlay"></div>
                 <h3>Boxing</h3>
@@ -152,51 +166,122 @@
                 <p>Flexibility.Wellbeing</p>
                 <button>Explore</button>
             </div>
-            <div class="feature pilates">
-                <div class="overlay"></div>
-                <h3>Pilates</h3>
-                <p>Flexibility.Wellbeing</p>
-                <button>Explore</button>
-            </div>
+
 
         </section>
+        <!--trainers-->
+        <section class="trainers features" id="trainers">
+            <h2>Trainers</h2>
+            <!-- <div class="trainer"> -->
+            <div class="training LISA">
+                <div class="trainer-details">
+                    <h3>LISA</h3>
+                    <p>Flexibility.Wellbeing</p>
+                    <!-- <button>Contact</button> -->
+                    <ul>
+                        <li><i class="fa-brands fa-square-facebook"></i></li>
+                        <li><i class="fa-brands fa-square-whatsapp"></i></li>
+                        <li><i class="fa-solid fa-square-envelope"></i></li>
+                        <li><i class="fa-brands fa-linkedin"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="training BENNET">
+                <div class="trainer-details">
+                    <h3>BENNET</h3>
+                    <p>Flexibility.Wellbeing</p>
+                    <!-- <button>Contact</button> -->
+                    <ul>
+                        <li><i class="fa-brands fa-square-facebook"></i></li>
+                        <li><i class="fa-brands fa-square-whatsapp"></i></li>
+                        <li><i class="fa-solid fa-square-envelope"></i></li>
+                        <li><i class="fa-brands fa-linkedin"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="training HENRY">
+                <div class="trainer-details">
+                    <h3>Henry</h3>
+                    <p>Flexibility.Wellbeing</p>
+                    <!-- <button>Contact</button> -->
+                    <ul>
+                        <li><i class="fa-brands fa-square-facebook"></i></li>
+                        <li><i class="fa-brands fa-square-whatsapp"></i></li>
+                        <li><i class="fa-solid fa-square-envelope"></i></li>
+                        <li><i class="fa-brands fa-linkedin"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="training DANIEL">
+                <div class="trainer-details">
+                    <h3>DANIEL</h3>
+                    <p>Flexibility.Wellbeing</p>
+                    <!-- <button>Contact</button> -->
+                    <ul>
+                        <li><i class="fa-brands fa-square-facebook"></i></li>
+                        <li><i class="fa-brands fa-square-whatsapp"></i></li>
+                        <li><i class="fa-solid fa-square-envelope"></i></li>
+                        <li><i class="fa-brands fa-linkedin"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="training HENEY">
+                <div class="trainer-details">
+                    <h3>HENEY</h3>
+                    <p>Flexibility.Wellbeing</p>
+                    <!-- <button>Contact</button> -->
+                    <ul>
+                        <li><i class="fa-brands fa-square-facebook"></i></li>
+                        <li><i class="fa-brands fa-square-whatsapp"></i></li>
+                        <li><i class="fa-solid fa-square-envelope"></i></li>
+                        <li><i class="fa-brands fa-linkedin"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="training MIKE">
+                <div class="trainer-details">
+                    <h3>MIKE</h3>
+                    <p>Flexibility.Wellbeing</p>
+                    <!-- <button>Contact</button> -->
+                    <ul>
+                        <li><i class="fa-brands fa-square-facebook"></i></li>
+                        <li><i class="fa-brands fa-square-whatsapp"></i></li>
+                        <li><i class="fa-solid fa-square-envelope"></i></li>
+                        <li><i class="fa-brands fa-linkedin"></i></li>
+                    </ul>
+
+                </div>
+            </div>
+            <!-- </div> -->
+        </section>
         <!--Pricing-->
-        <section class="pricing">
+        <section class="pricing" id="#pricing">
             <h2>Membership</h2>
             <div class="packages">
-                <h1>1 Year Package</h1>
+                <h1>Diamond</h1>
                 <p>9999/-</p>
                 <ul>
-                    <li>Yoga</li>
-                    <li>zumba</li>
-                    <li>Dancing</li>
-                    <li>Weight Lifting</li>
+
 
                 </ul>
                 <button>Subscribe</button>
             </div>
 
             <div class="packages">
-                <h1>6 Month Package</h1>
+                <h1>Gold</h1>
                 <p>6999/-</p>
                 <ul>
-                    <li>Yoga</li>
-                    <li>zumba</li>
-                    <li>Dancing</li>
-                    <li>Weight Lifting</li>
+
 
                 </ul>
                 <button>Subscribe</button>
             </div>
 
             <div class="packages">
-                <h1>1 Month Package</h1>
+                <h1>Silver</h1>
                 <p>2999/-</p>
                 <ul>
-                    <li>Yoga</li>
-                    <li>zumba</li>
-                    <li>Dancing</li>
-                    <li>Weight Lifting</li>
+
 
                 </ul>
                 <button>Subscribe</button>

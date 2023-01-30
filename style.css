@@ -45,10 +45,25 @@ body {
   font-weight: 700;
 }
 
-.menu ul li:hover {
+/* .menu ul li:hover {
   color: grey;
   background-color: azure;
   transition: 0.3s ease-in-out;
+} */
+
+.menu ul li::after {
+  content: "";;
+  height: 100%;
+  width: 00%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  ;
+}
+.menu ul li:hover::after {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
 }
 
 .menu ul li {
@@ -58,6 +73,9 @@ body {
   /* color: azure; */
   padding: 20px;
   cursor: pointer;
+  position: relative;
+  color:red;
+  text-decoration: underline;
 }
 .menu ul a {
   color: inherit;
@@ -140,7 +158,7 @@ body {
 
 .btn:hover {
   /* color: coral; */
-  background-color: aliceblue;
+  background-color: rgb(23, 108, 182);
   /* width: 50px; */
   padding: 16px 21px;
 }
@@ -217,13 +235,15 @@ body {
 .features {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 200px;
+  margin-top: 100px;
   flex-wrap: wrap;
   row-gap: 50px;
   position: relative;
+  padding-bottom: 50px;
 }
 .features h2,
-.pricing h2 {
+.pricing h2,
+.trainers h2 {
   font-size: 45px;
   color: azure;
   position: absolute;
@@ -338,7 +358,7 @@ body {
   margin-top: 80px;
   justify-content: center;
   align-items: flex-start;
-  gap: 130px;
+  gap: 20px;
   color: azure;
   height: 200px;
 }
@@ -353,12 +373,98 @@ body {
   align-items: center;
   text-align: center;
   gap: 20px;
-  width: 8vw;
+  width: 12vw;
   justify-content: flex-start;
 }
 
 .details h4 {
   font-size: 15px;
+}
+
+.about .icons::after:hover{
+  background-color: brown;
+}
+/* Trainers */
+
+.trainers {
+  width: 800px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 100px;
+  flex-wrap: wrap;
+  row-gap: 50px;
+}
+
+.training {
+  width: 30%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  /* background-color: aqua; */
+}
+
+.trainer-details {
+  /* height: 100px; */
+  height: 80px;
+  width: 100%;
+  background-color: rgba(38, 37, 37, 0.456);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 0;
+  color: azure;
+}
+
+.trainer-details button {
+  padding: 5px;
+}
+
+.trainer-details ul li {
+  list-style: none;
+}
+.trainer-details ul li:hover {
+  color: red;
+}
+.trainer-details ul li .svg-inline--fa {
+  height: 2em;
+}
+.trainer-details ul {
+  display: flex;
+  gap: 10px;
+}
+
+.LISA {
+  background-image: url("./image/female\ trainer\ small.jpg");
+  background-size: cover;
+}
+
+.BENNET {
+  background-image: url("./image/trainer\ 2.jpg");
+  background-size: cover;
+}
+
+.HENRY {
+  background-image: url("./image/trainer\ 3.jpg");
+  background-size: cover;
+}
+
+.DANIEL {
+  background-image: url("./image/trainer\ 4.jpg");
+  background-size: cover;
+}
+
+.HENEY {
+  background-image: url("./image/trainer\ 5.jpg");
+  background-size: cover;
+}
+
+.MIKE {
+  background-image: url("./image/trainer\ 6.jpg");
+  background-size: cover;
 }
 
 /*Footer*/
